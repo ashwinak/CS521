@@ -1,0 +1,2 @@
+show interfaces terse | no-more
+show chassis hardwaree | no-more

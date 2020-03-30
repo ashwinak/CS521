@@ -1,0 +1,19 @@
+*This is only for background streaming, no data will be written to DB. This is more like always on collector with 60sec retry.
+*You need to modify the script to replace the interface numbers used by your collector to send request towards DUT.
+*Make sure the tc tool used to create artificial delays is installed.
+*Change the sudo pwd as needed on the script.
+```
+ashwinak@sv-svr1dl380-csim:~/grpc/gtc$ ./ocst-master.py 15.168.0.3
+***Creating config JSON files...
+***Creating WAN delays of 100ms...
+qdisc netem 8005: root refcnt 65 limit 1000 delay 100.0ms
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0)
+ backlog 0b 0p requeues 0
+***Killing old sessions...
+***Starting new sessions...
+iptables: Bad rule (does a matching rule exist in that chain?).
+nohup: appending output to 'nohup.out'
+***Session already active,do nothing.Printing Active Sessions....
+root       545  0.0  0.0  51420  3832 pts/2    S+   10:32   0:00 sudo -S nohup ./jtimon-linux-amd64-15.168.0.3 --config 15.168.0.3.json
+root       552  0.4  0.0 1632580 13664 pts/2   Sl+  10:32   0:00 ./jtimon-linux-amd64-15.168.0.3 --config 15.168.0.3.json
+```

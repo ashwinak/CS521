@@ -1,0 +1,38 @@
+{
+  "paragraphs": [
+    {
+      "text": "sc.version",
+      "user": "sperambalam@qubole.com",
+      "dateUpdated": "Aug 29, 2017 5:43:02 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1504028559514_-1720154873",
+      "id": "20170829-174239_1686491722",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "\nres0: String \u003d 1.5.1\n"
+      },
+      "dateCreated": "Aug 29, 2017 5:42:39 PM",
+      "dateStarted": "Aug 29, 2017 5:43:02 PM",
+      "dateFinished": "Aug 29, 2017 5:44:32 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+}    

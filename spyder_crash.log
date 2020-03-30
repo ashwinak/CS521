@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/anaconda3/lib/python3.7/site-packages/spyder/app/mainwindow.py", line 3284, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/anaconda3/lib/python3.7/site-packages/spyder/app/mainwindow.py", line 3139, in run_spyder
+    main.setup()
+  File "/anaconda3/lib/python3.7/site-packages/spyder/app/mainwindow.py", line 914, in setup
+    from spyder.plugins.ipythonconsole import IPythonConsole
+  File "/anaconda3/lib/python3.7/site-packages/spyder/plugins/ipythonconsole.py", line 58, in <module>
+    from spyder.widgets.ipythonconsole import ClientWidget
+  File "/anaconda3/lib/python3.7/site-packages/spyder/widgets/ipythonconsole/__init__.py", line 12, in <module>
+    from .debugging import DebuggingWidget
+  File "/anaconda3/lib/python3.7/site-packages/spyder/widgets/ipythonconsole/debugging.py", line 13, in <module>
+    import pdb
+  File "/anaconda3/lib/python3.7/pdb.py", line 73, in <module>
+    import cmd
+  File "/Users/ashwinak/Desktop/scripts/py/cmd.py", line 11
+    print line.strip('\n')
+             ^
+SyntaxError: invalid syntax
