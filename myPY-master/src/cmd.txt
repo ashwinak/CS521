@@ -1,0 +1,310 @@
+show bgp neighbor | display xml | no-more
+show bgp group | display xml | no-more
+show krt state | display xml | no-more
+show firewall filter regex "(^|-)(et-[0-9.:/]+|ae[0-9.]+)-i$" | display xml | no-more
+show mpls lsp ingress detail | display xml | no-more
+show rsvp interface detail | display xml | no-more
+show pfe statistics traffic | display xml | no-more
+show rsvp session bypass lsp ingress statistics detail | display xml | no-more
+show chassis alarms | display xml | no-more
+show rsvp statistics | display xml | no-more
+show snmp statistics extensive | display xml | no-more
+show version
+show version invoke-on other-routing-engine
+show interfaces descriptions
+show chassis hardware models
+show mpls lsp defaults
+show bgp neighbor | match "^[ ]*(Peer:|Description:)"
+show interfaces media
+show rsvp statistics
+show chassis hardware detail
+show arp no-resolve
+show ipv6 neighbors
+show chassis pic fpc-slot 5 pic-slot 1 | display xml
+show chassis pic fpc-slot 1 pic-slot 1 | display xml
+show chassis pic fpc-slot 3 pic-slot 0 | display xml
+show chassis pic fpc-slot 1 pic-slot 0 | display xml
+show chassis pic fpc-slot 5 pic-slot 0 | display xml
+show chassis pic fpc-slot 2 pic-slot 1 | display xml
+show chassis pic fpc-slot 4 pic-slot 1 | display xml
+show chassis pic fpc-slot 6 pic-slot 1 | display xml
+show chassis pic fpc-slot 7 pic-slot 0 | display xml
+show chassis pic fpc-slot 2 pic-slot 0 | display xml
+show chassis pic fpc-slot 3 pic-slot 1 | display xml
+show chassis pic fpc-slot 6 pic-slot 0 | display xml
+show chassis pic fpc-slot 0 pic-slot 0 | display xml
+show chassis pic fpc-slot 7 pic-slot 1 | display xml
+show chassis pic fpc-slot 0 pic-slot 1 | display xml
+show chassis pic fpc-slot 4 pic-slot 0 | display xml
+request pfe execute command "show shim jchash" target fpc0 | no-more
+show interfaces diagnostics optics * | display xml | no-more
+request pfe execute command "show shim jchash" target fpc1 | no-more
+request pfe execute command "show shim jchash" target fpc2 | no-more
+show ephemeral-configuration
+show configuration groups junos-defaults
+show version detail
+show chassis fpc detail
+show chassis routing-engine
+show chassis environment
+show chassis sibs
+show system core-dumps
+show chassis hardware
+show system boot-messages
+show system yang package
+show system commit
+show chassis fpc
+show chassis hardware detail | display xml | no-more
+show chassis firmware
+show chassis clocks
+show configuration apply-groups | display xml
+show version invoke-on all-routing-engines | match " na |open|junos:"
+show system license
+show configuration | display inheritance | display xml
+show configuration
+request pfe execute command "show shim jchash" target fpc3 | no-more
+request pfe execute command "show shim jchash" target fpc4 | no-more
+request pfe execute command "show shim jchash" target fpc5 | no-more
+request pfe execute command "show shim jchash" target fpc6 | no-more
+request pfe execute command "show shim jchash" target fpc7 | no-more
+show chassis power | no-more
+show task memory | display xml | no-more
+show chassis fpc 0
+show chassis fpc 1
+show chassis fpc 2
+show chassis fpc 3
+show chassis fpc 4
+show chassis fpc 5
+show chassis fpc 6
+show chassis fpc 7
+show chassis sib
+show chassis sib slot 0
+show chassis sib slot 1
+show chassis sib slot 2
+show chassis sib slot 3
+show chassis sib slot 4
+show chassis sib slot 5
+show chassis sib slot 6
+show chassis sib slot 7
+show chassis sib slot 8
+request support information
+show system uptime no-forwarding
+show version detail no-forwarding
+show system core-dumps no-forwarding
+show chassis alarms no-forwarding
+show chassis hardware detail no-forwarding
+show system processes extensive no-forwarding
+show pfe statistics error
+show pfe statistics traffic
+show chassis routing-engine no-forwarding
+show chassis environment no-forwarding
+show chassis firmware no-forwarding
+show system boot-messages no-forwarding
+show system storage no-forwarding
+show system virtual-memory no-forwarding
+show system buffer no-forwarding
+show system queues no-forwarding
+show system statistics no-forwarding
+show configuration | except SECRET-DATA | display omit
+show interfaces extensive no-forwarding
+show chassis hardware extensive no-forwarding
+show krt queue
+show krt state
+show route summary
+show services sessions count
+show services sessions analysis
+show services sessions utilization
+show services subscriber analysis
+show services nat statistics
+show services service-sets statistics integrity-drops
+show services service-sets statistics tcp
+show services service-sets plug-ins
+show services alg statistics
+show services ha statistics
+show services ipsec-vpn ike security-associations
+show services ipsec-vpn ipsec security-associations
+show system configuration database usage
+show shmlog statistics logname all
+show system subscriber-management detail
+show subscribers summary
+show database-replication summary
+show database-replication statistics
+show shm-ipc statistics
+show system resource-monitor summary
+show accounting server statistics
+show accounting server statistics interim
+show dhcp statistics verbose
+show dhcpv6 statistics verbose
+show dhcp server statistics verbose
+show dhcp server binding summary
+show dhcpv6 server statistics verbose
+show dhcpv6 server binding summary
+show dhcp relay statistics verbose
+show dhcp relay binding summary
+show dhcpv6 relay statistics verbose
+show dhcpv6 relay binding summary
+show ppp statistics extensive
+show pppoe statistics
+show services l2tp summary
+show route forwarding-table summary
+show network-access aaa statistics accounting
+show network-access aaa statistics authentication detail
+show network-access aaa statistics radius
+show network-access aaa statistics volume-accounting
+show tnp addresses
+show chassis network-slices
+show chassis network-slices fpc
+show system processes | match mobiled
+show system processes | match rmpsd
+show system processes | match charged
+show unified-edge rmps table all-tables
+show unified-edge rmps configuration all-tables
+show unified-edge rmps filters
+show unified-edge rmps packet-steering
+show unified-edge rmps routes
+show unified-edge rmps nexthops
+show unified-edge rmps infra-stats
+show unified-edge gateways detail
+show unified-edge sgw system interfaces
+show unified-edge sgw resource-manager clients
+show unified-edge ggsn-pgw system interfaces
+show unified-edge ggsn-pgw resource-manager clients
+show interfaces load-balancing detail
+show class-of-service fabric statistics
+show interfaces queue
+show interfaces anchor-group
+show unified-edge ggsn-pgw system interfaces service-mode
+show unified-edge sgw system interfaces service-mode
+show unified-edge sgw service-mode
+show unified-edge ggsn-pgw service-mode
+show unified-edge ggsn-pgw apn service-mode
+show unified-edge ggsn-pgw address-assignment service-mode
+show firewall application rmps
+show unified-edge sgw gtp statistics detail
+show unified-edge sgw statistics
+show unified-edge ggsn-pgw gtp statistics detail
+show unified-edge ggsn-pgw statistics
+show unified-edge ggsn-pgw gtp peer detail
+show unified-edge ggsn-pgw gtp peer history detail
+show unified-edge sgw gtp peer detail
+show unified-edge sgw gtp peer history detail
+show unified-edge ggsn-pgw status extensive
+show unified-edge sgw status detail
+show unified-edge sgw status session-state
+show unified-edge ggsn-pgw status session-state
+show unified-edge ggsn-pgw address-assignment pool detail
+show unified-edge ggsn-pgw address-assignment group detail
+show unified-edge ggsn-pgw address-assignment statistics
+show unified-edge ggsn-pgw aaa statistics authentication detail
+show unified-edge ggsn-pgw aaa statistics accounting detail
+show unified-edge ggsn-pgw aaa statistics dynamic-requests detail
+show unified-edge ggsn-pgw aaa radius statistics authentication detail
+show unified-edge ggsn-pgw aaa radius statistics accounting detail
+show unified-edge ggsn-pgw aaa radius statistics dynamic-requests detail
+show unified-edge ggsn-pgw aaa network-element status
+show unified-edge ggsn-pgw aaa network-element-group status detail
+show dhcp proxy-client statistics
+show interfaces mif extensive
+show unified-edge ggsn-pgw charging transfer statistics
+show unified-edge ggsn-pgw charging transfer status
+show unified-edge ggsn-pgw charging path statistics
+show unified-edge ggsn-pgw charging path status
+show unified-edge ggsn-pgw charging trigger-profile
+show unified-edge ggsn-pgw charging local-persistent-storage statistics
+show unified-edge sgw charging transfer status
+show unified-edge sgw charging transfer statistics
+show unified-edge sgw charging path status
+show unified-edge sgw charging local-persistent-storage statistics
+show unified-edge ggsn-pgw exception-handling statistics detail
+show unified-edge ggsn-pgw ip-reassembly statistics detail
+show unified-edge sgw exception-handling statistics detail
+show unified-edge sgw ip-reassembly statistics detail
+show unified-edge sgw idle-mode-buffering statistics detail
+show unified-edge ggsn-pgw diameter dcca-gy statistics detail
+show unified-edge ggsn-pgw diameter network-element status
+show unified-edge ggsn-pgw diameter network-element statistics detail
+show unified-edge ggsn-pgw diameter pcc-gx statistics detail
+show unified-edge ggsn-pgw diameter peer status
+show unified-edge ggsn-pgw diameter peer statistics detail
+show unified-edge ggsn-pgw diameter shared-state server
+show system processes
+show unified-edge rmps configuration domain
+show unified-edge rmps configuration diameter-peer
+show unified-edge rmps tdf-routes
+show unified-edge tdf system interfaces
+show unified-edge tdf resource-manager clients
+show unified-edge tdf system interfaces service-mode
+show unified-edge tdf service-mode
+show unified-edge tdf domain service-mode
+show unified-edge tdf address-assignment service-mode
+show unified-edge tdf aaa statistics detail
+show unified-edge tdf aaa radius client status
+show unified-edge tdf aaa radius client statistics
+show unified-edge tdf statistics
+show unified-edge tdf statistics data-plane
+show unified-edge tdf subscribers stuck
+show unified-edge tdf status detail
+show unified-edge tdf address-assignment pool detail
+show unified-edge tdf address-assignment statistics
+show unified-edge tdf diameter network-element status
+show unified-edge tdf diameter network-element statistics detail
+show unified-edge tdf diameter pcc-gx statistics detail
+show unified-edge tdf diameter peer status
+show unified-edge tdf diameter peer statistics detail
+show services service-sets summary
+show services service-sets cpu-usage
+show services service-sets memory-usage
+show services service-sets memory-usage zone
+show services service-sets statistics packet-drops
+show services service-sets statistics syslog
+show services service-sets statistics tcp-mss
+show services stateful-firewall flows count
+show services stateful-firewall subscriber-analysis
+show services stateful-firewall flow-analysis
+show services stateful-firewall statistics
+show services stateful-firewall statistics extensive
+show services nat mappings summary
+show services nat pool
+show services nat pool detail
+show vmhost status
+show vmhost bridge
+show vmhost netstat
+show vmhost information
+show vmhost processes
+show vmhost support-info
+PID 49870, status 0
+show chassis alarms
+show system alarms
+PID 50620, status 0
+show system process extensive
+show isis adjacency extensive
+show bgp summary
+show bgp neighbor
+show mpls lsp terse
+show rsvp interface detail
+show mpls lsp ingress detail
+show rsvp session bypass lsp ingress statistics detail
+show pfe route summary
+show interfaces terse
+show interfaces diagnostics optics 0 add_noncq_to_grub.sh
+show snmp statistics extensive
+show snmp statistics subagents
+show snmp stats-response-statistics
+show task memory
+show pfe statistics fpc 0
+show pfe statistics fpc 1
+show pfe statistics fpc 2
+show pfe statistics fpc 3
+show pfe statistics fpc 4
+show pfe statistics fpc 5
+show pfe statistics fpc 6
+show pfe statistics fpc 7
+show system connections
+show agent sensors
+show chassis fabric summary
+show chassis fabric topology
+show chassis fabric fpcs
+show chassis fabric sibs
+show chassis fabric errors autoheal
+show chassis fabric plane-location
+show chassis fabric reachability
+show chassis fpc pic-status
